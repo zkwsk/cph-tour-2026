@@ -21,7 +21,7 @@ const stops = [
     name: 'Kødbyen',
     coords: [55.6686, 12.5581],
     desc: 'Walked through Istedgade into Copenhagen’s meatpacking district.',
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Warehouses%20in%20the%20Meatpacking%20District%20K%C3%B8dbyen%20in%20Copenhagen%2C%20Denmark.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/8/80/Copenhagen%2C_K%C3%B8dbyen_by_night%2C_September_2022.jpg'
   },
   {
     name: 'Kaktus Towers & Cykelslangen',
@@ -76,6 +76,13 @@ const stops = [
     coords: [55.6848, 12.5932],
     desc: 'Royal Copenhagen finale before returning toward Rådhuspladsen.',
     image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Marmorkirken%20Copenhagen%20seen%20from%20Amalienborg.jpg'
+  },
+  {
+    name: 'Rådhuspladsen → Manon Les Suites',
+    coords: [55.6761, 12.5683],
+    mode: 'metro / walk',
+    desc: 'Returned to the hotel and got lost in an elevator.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Copenhagen_Town_Hall_Square.jpg'
   }
 ];
 
