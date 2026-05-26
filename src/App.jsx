@@ -10,7 +10,7 @@ const numberedIcon = (number) =>
     popupAnchor: [0, -16]
   });
 
-const stops = const stops = [
+const stops = [
   {
     name: 'Hotel Manon Les Suites',
     coords: [55.6767, 12.5627],
