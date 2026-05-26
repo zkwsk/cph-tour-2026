@@ -10,90 +10,72 @@ const numberedIcon = (number) =>
     popupAnchor: [0, -16]
   });
 
-const stops = [
+const stops = const stops = [
   {
     name: 'Hotel Manon Les Suites',
     coords: [55.6767, 12.5627],
-    mode: 'start / walk',
     desc: 'Starting point — and eventual elevator maze finale.',
-    image: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?q=80&w=1200&auto=format&fit=crop'
+    image: 'https://files.guidedanmark.org/files/382/224192_Manon_Les_Suites_Cline_Au_detour_dun_chemin.jpg'
   },
   {
-    name: 'Istedgade → Kødbyen',
+    name: 'Kødbyen',
     coords: [55.6686, 12.5581],
-    mode: 'walk',
     desc: 'Walked through Istedgade into Copenhagen’s meatpacking district.',
-    image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=1200&auto=format&fit=crop'
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Warehouses%20in%20the%20Meatpacking%20District%20K%C3%B8dbyen%20in%20Copenhagen%2C%20Denmark.jpg'
   },
   {
     name: 'Kaktus Towers & Cykelslangen',
     coords: [55.6652, 12.5667],
-    mode: 'walk',
     desc: 'Passed beneath the iconic bicycle bridge before crossing Bryggebroen.',
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop'
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Copenhagen%20Cykelslangen%201.jpg'
   },
   {
     name: 'Islands Brygge & Gemini Residence',
     coords: [55.6623, 12.5708],
-    mode: 'walk',
     desc: 'Harbourfront walk with industrial architecture and canal views.',
-    image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop'
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gemini%20Residence%2C%20Islands%20Brygge%2C%20Copenhagen.jpg'
   },
   {
     name: 'Amager Fælled',
     coords: [55.6548, 12.5922],
-    mode: 'walk',
-    desc: 'Nature reserve and grazing field — horse-free on this visit.',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop'
+    desc: 'Wide open nature reserve — sadly horse-free today.',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Amager%20F%C3%A6lled%20path.jpg'
   },
   {
     name: 'Københavns Universitet & DR Byen',
     coords: [55.6596, 12.5893],
-    mode: 'walk',
-    desc: 'Bike and walking paths toward the university campus and TV station.',
-    image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop'
+    desc: 'Walked along bike paths toward the university campus and TV station.',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/K%C3%B8benhavn%20-%20DR-Byen%20%26%20DR%20Koncerthuset%20%2830999515615%29.jpg'
   },
   {
-    name: 'Christianshavn',
+    name: 'Christianshavn & Christiania',
     coords: [55.6737, 12.5968],
-    mode: 'metro',
-    desc: 'Metro from DR Byen to Christianshavn before entering Christiania.',
-    image: 'https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1200&auto=format&fit=crop'
+    desc: 'Metro to Christianshavn before entering Christiania.',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Christiania%20Street.JPG'
   },
   {
-    name: 'Christiania: Pusher Street, Månefiskeren & Morgenstedet',
+    name: 'Pusher Street → Dyssebroen → Norddyssen',
     coords: [55.6766, 12.6117],
-    mode: 'walk',
-    desc: 'Explored Christiania, crossed Dyssebroen, and continued through Midtdyssen and Norddyssen.',
-    image: 'https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1200&auto=format&fit=crop'
+    desc: 'Explored the canals, bridges, and quieter northern paths of Christiania.',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Dyssebroen%2C%20Copenhagen.jpg'
   },
   {
-    name: 'Refshaleøen & Reffen Street Food Market',
+    name: 'Refshaleøen & Reffen Street Food',
     coords: [55.6929, 12.6153],
-    mode: 'walk',
-    desc: 'Street food, harbour views, a glance at Alchemist, and a mysterious top-secret interlude nearby.',
-    image: 'https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&w=1200&auto=format&fit=crop'
+    desc: 'Street food, harbour views, a glimpse at Alchemist… and mysterious activities nearby.',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reffen%20Copenhagen%20Street%20Food%20Market%20%285%29.jpg'
   },
   {
     name: 'Nyhavn',
     coords: [55.6798, 12.5910],
-    mode: 'harbour bus',
-    desc: 'Arrived by harbour bus and observed the colourful waterfront houses.',
-    image: 'https://images.unsplash.com/photo-1519677100203-a0e668c92439?q=80&w=1200&auto=format&fit=crop'
+    desc: 'Arrived by harbour bus and admired the colourful waterfront houses.',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nyhavn%20copenhagen.jpg'
   },
   {
     name: 'Marmorkirken & Amalienborg',
     coords: [55.6848, 12.5932],
-    mode: 'walk',
-    desc: 'Royal Copenhagen finale before taking the metro back toward Rådhuspladsen.',
-    image: 'https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=1200&auto=format&fit=crop'
-  },
-  {
-    name: 'Rådhuspladsen → Manon Les Suites',
-    coords: [55.6761, 12.5683],
-    mode: 'metro / walk',
-    desc: 'Returned to the hotel and got lost in an elevator.',
-    image: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop'
+    desc: 'Royal Copenhagen finale before returning toward Rådhuspladsen.',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Marmorkirken%20Copenhagen%20seen%20from%20Amalienborg.jpg'
   }
 ];
 
